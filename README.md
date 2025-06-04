@@ -1,21 +1,27 @@
- doc# Codin 1 - React Dev Environment
+# Codin 1 - React Dev Environment
 
-This project sets up a simple React development environment in Docker that displays:
+This project sets up a simple React development environment in Docker.
 
-```html
-<h1>Codin 1</h1>
+## How to run:
 
-How to run:
+### 1. Open a terminal and navigate to your preferred folder.
 
-1. Open a terminal and navigate to your preferred folder.
+### 2. Close the repository:
+```
+https://github.com/Cera-creator/McEwan_Cera_coding_assignment11.git
+```
 
-2. Build the Docker image:
+### 2. Build the Docker image:
+```
 docker build -t mcewan_cera_app .
+```
 
-3. Run the container:
+### 3. Run the container:
+```
 docker run -it -p 7775:3000 --name mcewan_cera_coding_assignment11 mcewan_cera_app
+```
 
-4. Visit: http://localhost:7775
+### 4. Visit: http://localhost:7775
 
 Note: React server runs inside Docker on port 3000,
 but is mapped to port 7775 on your machine — access at http://localhost:7775
