@@ -4,24 +4,22 @@ This project sets up a simple React development environment in Docker.
 
 ## How to run:
 
-### 1. Open a terminal and navigate to your preferred folder.
-
-### 2. Clone the repository:
+### 1. Open terminal and clone the repository:
 ```
-https://github.com/Cera-creator/McEwan_Cera_coding_assignment11.git
+git clone https://github.com/Cera-creator/McEwan_Cera_coding_assignment11.git
 ```
 
-### 3. Build the Docker image:
+### 2. In the repsitory folder, build the Docker image:
 ```
 docker build -t mcewan_cera_app .
 ```
 
-### 4. Run the container:
+### 2. Run the container:
 ```
 docker run -it -p 7775:3000 --name mcewan_cera_coding_assignment11 mcewan_cera_app
 ```
 
-### 5. Visit: http://localhost:7775
+### 4. Visit: http://localhost:7775
 
 Note: React server runs inside Docker on port 3000,
 but is mapped to port 7775 on your machine — access at http://localhost:7775.
